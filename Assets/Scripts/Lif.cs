@@ -6,7 +6,6 @@ public class Lif : MonoBehaviour
 {
     //Public Fields
     public float speed = 1;
-
     //Private Fields
     private Rigidbody2D rb;
     private Animator animator;

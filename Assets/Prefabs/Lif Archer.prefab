@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 8101766660821411419}
   - component: {fileID: 8101766660821411414}
   - component: {fileID: 8101766660821411412}
+  - component: {fileID: 84540785193021024}
   - component: {fileID: 8101766660821411416}
   - component: {fileID: 8101766660821411415}
   - component: {fileID: 8101766660821411413}
@@ -151,7 +152,24 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   detectedObject: {fileID: 0}
+  examineWindow: {fileID: 0}
+  gameInterface: {fileID: 0}
+  examineText: {fileID: 0}
   pickedItems: []
+  isExamining: 0
+  isInteracting: 0
+--- !u!114 &84540785193021024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8101766660821411421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 261f456ebca4e41e3a48becbcf522607, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &8101766660821411416
 Rigidbody2D:
   serializedVersion: 4

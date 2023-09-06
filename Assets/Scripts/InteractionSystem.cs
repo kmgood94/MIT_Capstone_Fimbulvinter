@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class InteractionSystem : MonoBehaviour
 {
@@ -9,8 +11,12 @@ public class InteractionSystem : MonoBehaviour
     private const float detectionRadius = 0.2f;
     public LayerMask detectionLayer;
     public GameObject detectedObject;
-    [Header("Others")]
-    public List<GameObject> pickedItems = new List<GameObject>();
+    [Header("Examine Fields")]
+    public GameObject examineWindow;
+    public GameObject gameInterface;
+    public TextMeshProUGUI examineText;
+    public bool isExamining = false;
+    public bool isInteracting = false;
 
 
     // Update is called once per frame
@@ -52,9 +58,26 @@ public class InteractionSystem : MonoBehaviour
 
     }
 
-    public void PickUpItem(GameObject item)
+
+    public void ExamineItem(Item item)
     {
-     pickedItems.Add(item);   
+        if(isExamining)
+        {
+            examineWindow.SetActive(false);
+            gameInterface.SetActive(true);
+            Time.timeScale = 1;
+            isExamining = false; 
+            
+        }
+        else
+        {
+            examineText.text = item.descriptionText;
+            examineWindow.SetActive(true);
+            gameInterface.SetActive(false);
+            Time.timeScale = 0;
+            isExamining = true; 
+        }
     }
+
 
 }

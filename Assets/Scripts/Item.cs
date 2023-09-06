@@ -1,12 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class Item : MonoBehaviour
 {
-    public enum InteractionType {None, PickUp, Examine};
-    public InteractionType type;
+    public enum InteractionType {None, PickUp, Examine, Interact};
+    public enum ItemType {Static, Consumable, Equippable};
+    [Header("Attributes")]
+    public InteractionType interactType;
+    public ItemType type;
+    [Header("Examine")]
+    public string descriptionText;
+    [Header("Custom Event")]
+    public UnityEvent customEvent;
+    public UnityEvent consumeEvent;
     
     private void Reset()
     {
@@ -16,17 +25,26 @@ public class Item : MonoBehaviour
 
     public void Interact()
     {
-        switch(type)
+        switch(interactType)
         {
             case InteractionType.PickUp:
                 //Add object to inventory.
-                FindObjectOfType<InteractionSystem>().PickUpItem(gameObject);
+                FindObjectOfType<InventorySystem>().PickUp(gameObject);
                 //Delete object.
                 gameObject.SetActive(false);
                 break;
 
             case InteractionType.Examine:
                 Debug.Log("EXAMINE");
+                //Display examine window.
+                //Show image in middle?
+                //Write decription text under image.
+                FindObjectOfType<InteractionSystem>().ExamineItem(this);
+                break;
+
+            case InteractionType.Interact:
+                Debug.Log("INTERACT");
+                customEvent.Invoke();
                 break;
 
             default:
