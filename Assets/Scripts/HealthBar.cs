@@ -1,18 +1,33 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 { 
-public Image imgHealthBar;
-private int damage = 5;
+    public Image imgHealthBar;
+    public float health;
+    public GameObject DeathWindow;
 
-    // Update is called once per frame
-    void Update()
-    { if (Input.GetKeyDown(KeyCode.H)) {
-        imgHealthBar.fillAmount = imgHealthBar.fillAmount - (damage * 0.01f);
+
+
+    public void LoseHealth(int value)
+    {
+        if(health <= 0)
+            return;
+
+        health -= value;
+        imgHealthBar.fillAmount = health / 100;
+        if(health <= 0)
+        {
+            Debug.Log("YOU DIED");
+        }
+
+
     }
-        
-    }
+
+   private void Update()
+   {
+   //  if(Input.GetKeyDown(KeyCode.Return))
+   //      LoseHealth(25);    
+   }
+    
 }

@@ -14,7 +14,7 @@ TagManager:
   - Foreground
   - Interactable
   - Character
-  - 
+  - In Front of Character
   - 
   - 
   - 
@@ -55,4 +55,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 220663267
+    locked: 0
+  - name: In Front of Character
+    uniqueID: 1988461291
     locked: 0

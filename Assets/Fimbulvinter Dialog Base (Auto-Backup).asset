@@ -86,7 +86,7 @@ MonoBehaviour:
     - title: Name
       value: The Long Winter
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Pictures
       value: '[]'
       type: 3
@@ -94,19 +94,19 @@ MonoBehaviour:
     - title: Description
       value: Lif and his mother wish the escape the land before Ragnarok.
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Success Description
       value: You've escaped Fimbulvinter!
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Failure Description
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: State
       value: active
       type: 0
-      typeString: 
+      typeString: CustomFieldType_QuestState
     - title: Is Item
       value: False
       type: 2
@@ -119,6 +119,18 @@ MonoBehaviour:
       value: True
       type: 2
       typeString: CustomFieldType_Boolean
+    - title: Entry Count
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Entry 1 State
+      value: active
+      type: 0
+      typeString: CustomFieldType_QuestState
+    - title: Entry 1
+      value: Survive the cold.
+      type: 0
+      typeString: CustomFieldType_Text
   - id: 2
     fields:
     - title: Name
@@ -150,27 +162,127 @@ MonoBehaviour:
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Trackable
-      value: True
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Entry Count
-      value: 2
+      value: 14
       type: 1
       typeString: CustomFieldType_Number
-    - title: Entry 1 State
-      value: active
+    - title: Entry 4 State
+      value: 
       type: 0
       typeString: 
+    - title: Entry 4
+      value: Craft arrows.
+      type: 0
+      typeString: 
+    - title: Entry 6 State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Entry 6
+      value: Find a new shelter.
+      type: 0
+      typeString: 
+    - title: Entry 8 State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Entry 8
+      value: 'Light a fire. '
+      type: 0
+      typeString: 
+    - title: Entry 9 State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Entry 9
+      value: Find the Chest.
+      type: 0
+      typeString: 
+    - title: Entry 10 State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Entry 10
+      value: Equip what you found.
+      type: 0
+      typeString: 
+    - title: Entry 11 State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Entry 11
+      value: Defeat the Hel-walker.
+      type: 0
+      typeString: 
+    - title: Entry 12 State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Entry 12
+      value: Leave the house.
+      type: 0
+      typeString: 
+    - title: Entry 13 State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Entry 13
+      value: Help the Merchant.
+      type: 0
+      typeString: 
+    - title: Entry 14 State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Entry 14
+      value: Talk to the Merchant.
+      type: 0
+      typeString: 
+    - title: Track
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
     - title: Entry 1
-      value: 
+      value: 'Fight off the wolf. '
+      type: 0
+      typeString: 
+    - title: Entry 1 State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Entry 2
+      value: Find the gold-petaled flowers.
       type: 0
       typeString: 
     - title: Entry 2 State
       value: unassigned
       type: 0
       typeString: 
-    - title: Entry 2
-      value: 
+    - title: Entry 3
+      value: Use the flowers to heal yourself.
+      type: 0
+      typeString: 
+    - title: Entry 3 State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Entry 5
+      value: Hunt for food.
+      type: 0
+      typeString: 
+    - title: Entry 5 State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Entry 7
+      value: Search the house.
+      type: 0
+      typeString: 
+    - title: Entry 7 State
+      value: unassigned
       type: 0
       typeString: 
   locations:
@@ -241,19 +353,19 @@ MonoBehaviour:
   - id: 1
     fields:
     - title: Title
-      value: New Conversation 1
+      value: Opening Dialog
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Description
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Actor
       value: 1
       type: 5
       typeString: CustomFieldType_Actor
     - title: Conversant
-      value: 2
+      value: -1
       type: 5
       typeString: CustomFieldType_Actor
     overrideSettings:
@@ -289,37 +401,37 @@ MonoBehaviour:
       - title: Title
         value: START
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
         value: None()
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 1
       isRoot: 0
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
@@ -344,32 +456,32 @@ MonoBehaviour:
       - title: Title
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: -1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: 'If the snow keeps falling, I won''t be able to leave the house soon.
           I''ve got to get more supplies. '
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 1
       isRoot: 0
       isGroup: 0
@@ -381,7 +493,7 @@ MonoBehaviour:
       - originConversationID: 1
         originDialogueID: 1
         destinationConversationID: 1
-        destinationDialogueID: 2
+        destinationDialogueID: 3
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -395,96 +507,37 @@ MonoBehaviour:
         y: 80
         width: 160
         height: 30
-    - id: 2
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: Continue
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Response Menu Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 1
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 2
-        destinationConversationID: 1
-        destinationDialogueID: 3
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 158.89464
-        y: 137.22379
-        width: 160
-        height: 30
     - id: 3
       fields:
       - title: Title
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: -1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: I'll need more food, more firewood, and I should probably make some
           more arrows.
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 1
       isRoot: 0
       isGroup: 0
@@ -506,8 +559,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 162.06398
-        y: 195.99585
+        x: 161.032
+        y: 131.4964
         width: 160
         height: 30
     - id: 4
@@ -522,11 +575,11 @@ MonoBehaviour:
         typeString: CustomFieldType_Text
       - title: Actor
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
-        type: 5
+        value: -1
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
@@ -555,13 +608,13 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 162.06398
-        y: 245.99585
+        x: 160.97716
+        y: 180.7864
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 22}
-    canvasZoom: 1.9380014
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 1.7132815
   syncInfo:
     syncActors: 0
     syncItems: 0

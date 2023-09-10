@@ -14,6 +14,7 @@ public class Lif : MonoBehaviour
     private bool isRunning = false;
     private bool facingRight = true;
 
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -27,6 +28,7 @@ public class Lif : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.LeftShift))
         {
             isRunning = true;
+    
         }
         if(Input.GetKeyUp(KeyCode.LeftShift))
         {

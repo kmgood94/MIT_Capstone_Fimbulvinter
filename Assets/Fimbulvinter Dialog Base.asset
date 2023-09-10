@@ -112,13 +112,25 @@ MonoBehaviour:
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Trackable
-      value: False
+      value: True
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Track
-      value: False
+      value: True
       type: 2
       typeString: CustomFieldType_Boolean
+    - title: Entry Count
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Entry 1 State
+      value: active
+      type: 0
+      typeString: CustomFieldType_QuestState
+    - title: Entry 1
+      value: Survive the cold.
+      type: 0
+      typeString: CustomFieldType_Text
   - id: 2
     fields:
     - title: Name
@@ -150,43 +162,19 @@ MonoBehaviour:
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Trackable
-      value: True
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Entry Count
-      value: 15
+      value: 14
       type: 1
       typeString: CustomFieldType_Number
-    - title: Entry 1 State
-      value: active
+    - title: Entry 4 State
+      value: 
       type: 0
       typeString: 
-    - title: Entry 1
-      value: Find food.
-      type: 0
-      typeString: 
-    - title: Entry 2 State
-      value: active
-      type: 0
-      typeString: 
-    - title: Entry 2
-      value: Find firewood.
-      type: 0
-      typeString: 
-    - title: Entry 3 State
-      value: active
-      type: 0
-      typeString: 
-    - title: Entry 3
+    - title: Entry 4
       value: Craft arrows.
-      type: 0
-      typeString: 
-    - title: Entry 5 State
-      value: unassigned
-      type: 0
-      typeString: 
-    - title: Entry 5
-      value: Find the gold-petaled flowers.
       type: 0
       typeString: 
     - title: Entry 6 State
@@ -194,14 +182,6 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Entry 6
-      value: Use the flowers to heal yourself.
-      type: 0
-      typeString: 
-    - title: Entry 7 State
-      value: unassigned
-      type: 0
-      typeString: 
-    - title: Entry 7
       value: Find a new shelter.
       type: 0
       typeString: 
@@ -218,7 +198,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Entry 9
-      value: Cook and eat food.
+      value: Find the Chest.
       type: 0
       typeString: 
     - title: Entry 10 State
@@ -226,15 +206,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Entry 10
-      value: Search the house.
-      type: 0
-      typeString: 
-    - title: Entry 4
-      value: 'Fight off the wolf. '
-      type: 0
-      typeString: 
-    - title: Entry 4 State
-      value: unassigned
+      value: Equip what you found.
       type: 0
       typeString: 
     - title: Entry 11 State
@@ -242,7 +214,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Entry 11
-      value: Equip what you found.
+      value: Defeat the Hel-walker.
       type: 0
       typeString: 
     - title: Entry 12 State
@@ -250,7 +222,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Entry 12
-      value: Defeat the Hel-walker.
+      value: Leave the house.
       type: 0
       typeString: 
     - title: Entry 13 State
@@ -258,7 +230,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Entry 13
-      value: Find another shelter.
+      value: Help the Merchant.
       type: 0
       typeString: 
     - title: Entry 14 State
@@ -266,39 +238,53 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Entry 14
-      value: Save the Dwarf.
-      type: 0
-      typeString: 
-    - title: Entry 15 State
-      value: unassigned
-      type: 0
-      typeString: 
-    - title: Entry 15
-      value: Talk to the Dwarf.
+      value: Talk to the Merchant.
       type: 0
       typeString: 
     - title: Track
-      value: True
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
-  - id: 3
-    fields:
-    - title: Name
-      value: New Item 3
+    - title: Entry 1
+      value: 'Fight off the wolf. '
       type: 0
-      typeString: CustomFieldType_Text
-    - title: Pictures
-      value: '[]'
-      type: 3
-      typeString: CustomFieldType_Files
-    - title: Description
-      value: 
+      typeString: 
+    - title: Entry 1 State
+      value: unassigned
       type: 0
-      typeString: CustomFieldType_Text
-    - title: Is Item
-      value: True
-      type: 2
-      typeString: CustomFieldType_Boolean
+      typeString: 
+    - title: Entry 2
+      value: Find the gold-petaled flowers.
+      type: 0
+      typeString: 
+    - title: Entry 2 State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Entry 3
+      value: Use the flowers to heal yourself.
+      type: 0
+      typeString: 
+    - title: Entry 3 State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Entry 5
+      value: Hunt for food.
+      type: 0
+      typeString: 
+    - title: Entry 5 State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Entry 7
+      value: Search the house.
+      type: 0
+      typeString: 
+    - title: Entry 7 State
+      value: unassigned
+      type: 0
+      typeString: 
   locations:
   - id: 1
     fields:
