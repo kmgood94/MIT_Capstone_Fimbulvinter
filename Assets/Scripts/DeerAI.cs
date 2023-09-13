@@ -68,4 +68,8 @@ public class DeerAI : MonoBehaviour
             nextID += idChangeValue;
         }
     }
+    public void StopMovement()
+    {
+        speed = 0;
+    }
 }

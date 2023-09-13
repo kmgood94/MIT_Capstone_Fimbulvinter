@@ -13,6 +13,7 @@ public class Lif : MonoBehaviour
     private float runSpeedModifier = 2;
     private bool isRunning = false;
     private bool facingRight = true;
+    private bool isDead = false;
 
 
     void Awake()
@@ -23,6 +24,9 @@ public class Lif : MonoBehaviour
 
     void Update()
     {
+        if(CanMoveOrInteract() == false)
+            return;
+
         horizontalValue = Input.GetAxisRaw("Horizontal");
 
         if(Input.GetKeyDown(KeyCode.LeftShift))
@@ -39,6 +43,20 @@ public class Lif : MonoBehaviour
     void FixedUpdate()
     {
         Move(horizontalValue);
+    }
+
+    public bool CanMoveOrInteract()
+    {
+        bool can = true;
+
+        if (FindObjectOfType<InteractionSystem>().isExamining)
+            can = false;
+        if (FindObjectOfType<InventorySystem>().isOpen)
+            can = false;
+        if (isDead)
+            can = false;
+
+        return can;
     }
 
     void Move(float dir)
@@ -66,5 +84,15 @@ public class Lif : MonoBehaviour
 
         //0 for idle, 4 for walking, 8 for running.
         animator.SetFloat("xVelocity", Mathf.Abs(rb.velocity.x));
+    }
+    
+    public void Die()
+    {
+        isDead = true;
+
+    }
+    public void ResetPlayer()
+    {
+        isDead = false;
     }
 }

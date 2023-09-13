@@ -7,7 +7,8 @@ public class EnemyAI : MonoBehaviour
 {
     public List<Transform> points;
     public int nextID = 0;
-    private int idChangeValue = 1;
+//    private int idChangeValue = 1;
+    public Animator wolfAnimate;
     public float speed = 2;
 
     private void Reset()
@@ -40,40 +41,44 @@ public class EnemyAI : MonoBehaviour
         points.Add(p2.transform);
     }
 
-    private void Update()
-    {
-        MoveToNextPoint();
-
-    }
-    private void MoveToNextPoint()
-    {
-        Transform goalPoint = points[nextID];
-        if(goalPoint.transform. position.x > transform.position.x)
-        {
-            transform.localScale = new Vector3(-0.04f, 0.04f, 0.04f);
-        }
-        else
-        {
-            transform.localScale = new Vector3(0.04f, 0.04f, 0.04f);
-        }
-        transform.position = Vector2.MoveTowards(transform.position, goalPoint.position, speed * Time.deltaTime);
-        if(Vector2.Distance(transform.position, goalPoint.position) < 1f)
-        {
-            if(nextID == points.Count - 1)
-                idChangeValue = -1;
-
-            if(nextID == 0)
-                idChangeValue = 1;
-
-            nextID += idChangeValue;
-        }
-    }
+   private void Update()
+   {
+//       MoveToNextPoint();
+//
+   }
+//    private void MoveToNextPoint()
+//    {
+//        Transform goalPoint = points[nextID];
+//        if(goalPoint.transform. position.x > transform.position.x)
+//        {
+//            transform.localScale = new Vector3(-0.04f, 0.04f, 0.04f);
+//        }
+//        else
+//        {
+//            transform.localScale = new Vector3(0.04f, 0.04f, 0.04f);
+//        }
+//        transform.position = Vector2.MoveTowards(transform.position, goalPoint.position, speed * Time.deltaTime);
+//        if(Vector2.Distance(transform.position, goalPoint.position) < 1f)
+//        {
+//            if(nextID == points.Count - 1)
+//                idChangeValue = -1;
+//
+//            if(nextID == 0)
+//                idChangeValue = 1;
+//
+//            nextID += idChangeValue;
+//        }
+//    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Player")
         {
-            Debug.Log($"{name} Triggered");
+            FindObjectOfType<HealthBar>().LoseHealth(15);
+            wolfAnimate.Play("wolf_attack");
+            if (collision.GetComponent<AttackAction>())
+                collision.GetComponent<AttackAction>().Action();
+            
         }
     }
 }

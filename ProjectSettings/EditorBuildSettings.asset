@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Credits.unity
     guid: 7446b610153cf464691d35cf068843fc
   - enabled: 1
+    path: Assets/Scenes/OpeningCinematic.unity
+    guid: de7c3b6fec17b4d8f89b938e5ea1aa13
+  - enabled: 1
     path: Assets/Scenes/Gameplay1_Forest1.unity
     guid: ceb9caddef27442a881c0e4b5dd8397a
   - enabled: 1
@@ -20,14 +23,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Gameplay2_House.unity
     guid: ae6858ab2f6974bfa968173a8bbe3c02
-  - enabled: 0
-    path: Assets/Scenes/Gameplay4_Cave.unity
-    guid: 7e7753a6df7c143d381f6093f764638d
   - enabled: 1
     path: Assets/Scenes/Gameplay5_Forest3.unity
     guid: 876a67a9842494a82951e06d6a95ab36
   - enabled: 1
-    path: Assets/Scenes/Game_Complete.unity
-    guid: df2de9dd3e1df489b9f978d3dacaab0c
+    path: Assets/Scenes/WinScreen.unity
+    guid: 64a65a67604f8493fa3bdd389b97d7af
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: c524cffadcd1b4c2a9c8535d91e7448e, type: 2}

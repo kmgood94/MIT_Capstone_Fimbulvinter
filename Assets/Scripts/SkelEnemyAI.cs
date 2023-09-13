@@ -9,6 +9,7 @@ public class SkelEnemyAI : MonoBehaviour
     public int nextID = 0;
     private int idChangeValue = 1;
     public float speed = 2;
+    public Animator skelAnimate;
 
     private void Reset()
     {
@@ -50,11 +51,11 @@ public class SkelEnemyAI : MonoBehaviour
         Transform goalPoint = points[nextID];
         if(goalPoint.transform. position.x > transform.position.x)
         {
-            transform.localScale = new Vector3(-6, 6, 6);
+            transform.localScale = new Vector3(-5.5f, 5.5f, 5.5f);
         }
         else
         {
-            transform.localScale = new Vector3(6, 6, 6);
+            transform.localScale = new Vector3(5.5f, 5.5f, 5.5f);
         }
         transform.position = Vector2.MoveTowards(transform.position, goalPoint.position, speed * Time.deltaTime);
         if(Vector2.Distance(transform.position, goalPoint.position) < 1f)
@@ -66,6 +67,16 @@ public class SkelEnemyAI : MonoBehaviour
                 idChangeValue = 1;
 
             nextID += idChangeValue;
+        }
+    }
+        private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Player")
+        {
+            FindObjectOfType<HealthBar>().LoseHealth(25);
+            skelAnimate.Play("skel_attack");
+            if (collision.GetComponent<AttackAction>())
+                collision.GetComponent<AttackAction>().Action();
         }
     }
 }

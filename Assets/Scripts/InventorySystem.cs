@@ -21,6 +21,7 @@ public class InventorySystem : MonoBehaviour
 
     private void Start()
     {
+        // The rest of your Start method
         Update_UI();
     }
     private void Update()
@@ -97,6 +98,7 @@ public class InventorySystem : MonoBehaviour
     {
         if(items[id].GetComponent<Item>().type == Item.ItemType.Consumable)
         {
+            FindObjectOfType<HealthBar>().GainHealth(25);
             items[id].GetComponent<Item>().consumeEvent.Invoke();
             Destroy(items[id], 0.1f);
             items.RemoveAt(id);

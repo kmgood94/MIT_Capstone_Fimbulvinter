@@ -1,0 +1,68 @@
+Fimbulvinter:
+A Mythological Survival RPG by Kayla Goodison.
+
+CREDITS:
+Game By
+Kayla Goodison
+
+Story By
+Kayla Goodison
+
+Music By
+Monument Studios
+
+Sound Design By
+Kayla Goodison
+
+Engine
+Unity
+
+Assets
+Courtesy of the Unity Asset Store:
+2D Snow Forest Pack - Hand Crafted Art | Alien Nude LTD
+Classic UI Icons | PONETI
+Ethan the Hero | Twelve
+Fantasy Skybox | Render Knight
+Hero and Opponents Animation | Szadi Art
+Painted UI | Soti
+Pixel Art: Animated Deer | Saru Rezec
+Pixel Art: Animated Wolf | Saru Rezec
+Pixel Art Platformer | Cainos
+Winter Parallax Landscape | TvdM1986
+
+Music
+Fantasy Complete II Pack | Monument Studios
+Occult Forces Pack | Monument Studios
+
+
+Audio Foleys 
+Courtesy of freesound.com:
+ANGRY DOG BARK SNARL Flat | Unknown
+Arctic Wind | Unknown
+Big old rotten bough breaks, close up, cracking, H6 | Bini_trns
+Big Tree Fall in Forest | Kinoton
+Bonfire Being Lit | samararaine
+Book Put into Old Backpack | Kawgrim
+Bow Drawn | Paveroux
+Bow Impact | EminYILDIRIM
+Bow_release | PorkMuncher
+Breaking A Wall Down (With A Hammer) | scampsie
+Creaky bed | ShadowReaper2814
+Deer Meewing 01 | msantoro11
+DogYelp | TobiasKosmos
+field forest winter 002 NL 201216_0209 |klankbeeld
+Fire | PagDev
+Foley_Object_Metal_Chest_Open&Close_Mono | Nox_Sound
+Footsteps_Snow_03 | MarcMatthewsMusic
+Indoor Foosteps | dkiller2204
+paper flip 2 | gynation
+Raven | Bidone
+steps in show | dreamoutloud
+wolf-growl | newagesoup
+33 | y89312
+
+DEFECTS:
+Keep an eye out for these defects in gameplay.
+- Loot drops do not always spawn.
+- Information like the current health bar state and the inventory do not carry between scenes. 
+- When in the house scenes, attempting to leave on the left side of the screen results in the player getting stuck.

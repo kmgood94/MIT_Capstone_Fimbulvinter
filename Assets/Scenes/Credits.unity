@@ -624,10 +624,10 @@ RectTransform:
   m_Father: {fileID: 1526500237}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0019934, y: 169.0509}
-  m_SizeDelta: {x: 281.87, y: 599.8817}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0.0019989014, y: -400.0006}
+  m_SizeDelta: {x: 281.87, y: 799.9995}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &492143032
 MonoBehaviour:
@@ -671,7 +671,7 @@ MonoBehaviour:
 
     <u>Sound Design By</u>
 
-    Monument Studios
+    Kayla Goodison
 
 
     <u>Engine</u>
@@ -681,46 +681,106 @@ MonoBehaviour:
 
     <u>Assets</u>
 
-    2D
-    Snow Forest Pack - Hand Crafted Art | Alien Nude LTD
+    Courtesy
+    of the Unity Asset Store:
 
-    Classic UI Icons |
-    PONETI
+    2D Snow Forest Pack - Hand Crafted Art | Alien
+    Nude LTD
 
-    Dialogue System for Unity | Pixel Crushers
+    Classic UI Icons | PONETI
 
-    Fantasy Complete
-    II | Monument Studios
+    Ethan the Hero | Twelve
 
-    Fantasy Skybox | Render Knight
+    Fantasy
+    Skybox | Render Knight
 
-    Hero and Opponents
-    Animation | Szadi Art
+    Hero and Opponents Animation | Szadi Art
 
-    Ice and Snow Pack | Kat Grabowska
+    Painted
+    UI | Soti
 
-    Occult Forces
-    | Monument Studios
+    Pixel Art: Animated Deer | Saru Rezec
 
-    Painted UI | Soti
+    Pixel Art: Animated
+    Wolf | Saru Rezec
 
-    Pixel Art: Animated Deer | Saru
-    Rezec
+    Pixel Art Platformer | Cainos
 
-    Pixel Art: Animated Fox | Saru Rezec
-
-    Pixel Art: Animated Raven
-    | Saru Rezec
-
-    Pixel Art: Animated Wolf | Saru Rezec
-
-    Pixel Art Platformer
-    | Cainos
-
-    Winter Parallax Landscape | TvdM1986
+    Winter Parallax Landscape
+    | TvdM1986
 
 
-    Thanks for playing!'
+    <u>Music</u>
+
+    Fantasy Complete II Pack | Monument Studios
+
+    Occult
+    Forces Pack | Monument Studios
+
+
+    <u>Audio Foleys</u>
+
+    Courtesy of freesound.com:
+
+    ANGRY
+    DOG BARK SNARL Flat | Unknown
+
+    Arctic Wind | Unknown
+
+    Big old rotten
+    bough breaks, close up, cracking, H6 | Bini_trns
+
+    Big Tree Fall in Forest
+    | Kinoton
+
+    Bonfire Being Lit | samararaine
+
+    Book Put into Old Backpack
+    | Kawgrim
+
+    Bow Drawn | Paveroux
+
+    Bow Impact | EminYILDIRIM
+
+    Bow_release
+    | PorkMuncher
+
+    Breaking A Wall Down (With A Hammer) | scampsie
+
+    Creaky
+    bed | ShadowReaper2814
+
+    Deer Meewing 01 | msantoro11
+
+    DogYelp | TobiasKosmos
+
+    field
+    forest winter 002 NL 201216_0209 |klankbeeld
+
+    Fire | PagDev
+
+    Foley_Object_Metal_Chest_Open&Close_Mono
+    | Nox_Sound
+
+    Footsteps_Snow_03 | MarcMatthewsMusic
+
+    Indoor Foosteps |
+    dkiller2204
+
+    paper flip 2 | gynation
+
+    Raven | Bidone
+
+    steps in show
+    | dreamoutloud
+
+    wolf-growl | newagesoup
+
+    33 | y89312
+
+
+    Thanks for
+    playing!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f15dcd330b0e4435bb9c970da8558ef7, type: 2}
   m_sharedMaterial: {fileID: -8501872913779059096, guid: f15dcd330b0e4435bb9c970da8558ef7, type: 2}
@@ -783,7 +843,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0.23432921, y: 8.412743, z: 0.09425354, w: -0.30405423}
+  m_margin: {x: 0.23432921, y: 8.412743, z: 0.09425354, w: -453.29214}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
