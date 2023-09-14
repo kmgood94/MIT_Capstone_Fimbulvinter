@@ -8,6 +8,7 @@ public class Dialogue : MonoBehaviour
     //Fields
     //Window
     public GameObject window;
+    public GameObject inventory;
     //Indicator
     public GameObject indicator;
     //Text component
@@ -39,6 +40,10 @@ public class Dialogue : MonoBehaviour
     {
         indicator.SetActive(show);
     }
+    public void ToggleInventory(bool show)
+    {
+        inventory.SetActive(show);
+    }
 
     //Start Dialogue
     public void StartDialogue()
@@ -52,8 +57,10 @@ public class Dialogue : MonoBehaviour
         ToggleWindow(true);
         //hide the indicator
         ToggleIndicator(false);
+        ToggleInventory(false);
         //Start with first dialogue
         GetDialogue(0);
+
     }
 
     private void GetDialogue(int i)
@@ -78,7 +85,9 @@ public class Dialogue : MonoBehaviour
         //Stop all Ienumerators
         StopAllCoroutines();
         //Hide the window
-        ToggleWindow(false);        
+        ToggleWindow(false); 
+        ToggleInventory(true);  
+   
     }
     //Writing logic
     IEnumerator Writing()

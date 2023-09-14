@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Gameplay1_Forest1.unity
     guid: ceb9caddef27442a881c0e4b5dd8397a
   - enabled: 1
+    path: Assets/Scenes/Cinematic2.unity
+    guid: 4fec95761bd9c45b492bd40159ca61dd
+  - enabled: 1
     path: Assets/Scenes/Gameplay3_Forest2.unity
     guid: c2e3dc49c1b2343e8be436d841ed3183
   - enabled: 1

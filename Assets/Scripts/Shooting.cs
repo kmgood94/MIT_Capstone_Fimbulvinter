@@ -6,6 +6,8 @@ public class Shooting : MonoBehaviour
     public Transform shootingPoint;
     public bool canShoot = true;
     public Animator lifAnimate;
+    public AudioSource drawSound;
+    public AudioSource looseSound;
     
     private void Update()
     {
@@ -16,10 +18,12 @@ public class Shooting : MonoBehaviour
         if(Input.GetMouseButtonDown(0))
         {
             lifAnimate.Play("Lif_Archer_Draw");
+            drawSound.Play(0);
         }
         if(Input.GetMouseButtonUp(0))
         {
             lifAnimate.Play("Lif_Archer_Loose");
+            looseSound.Play(0);
              Shoot();
 
         }

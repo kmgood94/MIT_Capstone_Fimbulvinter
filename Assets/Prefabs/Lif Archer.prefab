@@ -274,6 +274,8 @@ MonoBehaviour:
   shootingPoint: {fileID: 3649762300937098791}
   canShoot: 1
   lifAnimate: {fileID: 8101766660821411413}
+  drawSound: {fileID: 7360434260304467917}
+  looseSound: {fileID: 5054271969607154082}
 --- !u!1 &8855407872318516256
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,6 +364,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5c684128698f4bf986ee89c807306be, type: 3}
+--- !u!82 &5054271969607154082 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5013948124296071751, guid: a5c684128698f4bf986ee89c807306be, type: 3}
+  m_PrefabInstance: {fileID: 266133297229378533}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5054271969607154085 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5013948124296071744, guid: a5c684128698f4bf986ee89c807306be, type: 3}
@@ -424,6 +431,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf5697cc931e8409ca257e1b85b5431d, type: 3}
+--- !u!82 &7360434260304467917 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2453692627591100248, guid: bf5697cc931e8409ca257e1b85b5431d, type: 3}
+  m_PrefabInstance: {fileID: 4911394779127865493}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7360434260304467918 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2453692627591100251, guid: bf5697cc931e8409ca257e1b85b5431d, type: 3}

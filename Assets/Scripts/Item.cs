@@ -40,6 +40,7 @@ public class Item : MonoBehaviour
                 //Show image in middle?
                 //Write decription text under image.
                 FindObjectOfType<InteractionSystem>().ExamineItem(this);
+                customEvent.Invoke();
                 break;
 
             case InteractionType.Interact:

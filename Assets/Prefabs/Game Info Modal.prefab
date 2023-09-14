@@ -567,7 +567,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &753932441066556105
 RectTransform:
   m_ObjectHideFlags: 0
@@ -616,7 +616,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 96b0bd8c44cabd94badd39ad081d9356, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1931,8 +1931,8 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_NormalColor: {r: 0.9490196, g: 0.9098039, b: 0.90588236, a: 1}
+    m_HighlightedColor: {r: 0.7254902, g: 0.45882353, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1953,7 +1953,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 753932441376296150}
   toggleTransition: 1
   graphic: {fileID: 0}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 1500384219874126962}
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -2810,7 +2810,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &753932441602881861
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3471,8 +3471,8 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_NormalColor: {r: 0.9490196, g: 0.9098039, b: 0.90588236, a: 1}
+    m_HighlightedColor: {r: 0.7254902, g: 0.45882353, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -3493,7 +3493,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 753932441689553174}
   toggleTransition: 1
   graphic: {fileID: 0}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 1500384219874126962}
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -4470,8 +4470,8 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_NormalColor: {r: 0.9490196, g: 0.9098039, b: 0.90588236, a: 1}
+    m_HighlightedColor: {r: 0.7254902, g: 0.45882353, b: 0, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -4492,7 +4492,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 753932441908021975}
   toggleTransition: 1
   graphic: {fileID: 0}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 1500384219874126962}
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -4508,7 +4508,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_IsOn: 0
+  m_IsOn: 1
 --- !u!1 &753932441940286045
 GameObject:
   m_ObjectHideFlags: 0
@@ -5514,7 +5514,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.7999935, y: 19.391258}
+  m_AnchoredPosition: {x: -2.1, y: -1}
   m_SizeDelta: {x: 297.475, y: 203.51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &753932442155751285
@@ -5550,8 +5550,8 @@ MonoBehaviour:
     I can before it gets colder.\n\nI am so hungry.\n\nTASKS:\n- Find food.\n- Craft
     arrows.\n- Collect firewood."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f15dcd330b0e4435bb9c970da8558ef7, type: 2}
+  m_sharedMaterial: {fileID: -8501872913779059096, guid: f15dcd330b0e4435bb9c970da8558ef7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5614,7 +5614,7 @@ MonoBehaviour:
   m_margin: {x: 0.23434424, y: 8.412743, z: 0.09425354, w: -0.30407715}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &753932442196163119
@@ -5867,7 +5867,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_IsOn: 0
+  m_IsOn: 1
 --- !u!1 &753932442234261424
 GameObject:
   m_ObjectHideFlags: 0
@@ -5901,8 +5901,8 @@ RectTransform:
   m_Father: {fileID: 753932441659679216}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.49562815}
+  m_AnchorMax: {x: 1, y: 0.9999994}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -6910,7 +6910,7 @@ MonoBehaviour:
       - m_Target: {fileID: 753932441609950083}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
-        m_Mode: 6
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6919,7 +6919,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!1 &753932442524753403
 GameObject:
   m_ObjectHideFlags: 0
@@ -7435,7 +7435,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.7999935, y: 19.391258}
+  m_AnchoredPosition: {x: -2.1, y: -2}
   m_SizeDelta: {x: 297.475, y: 203.51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &753932442666044891
@@ -7471,8 +7471,8 @@ MonoBehaviour:
     winter. She says we have to leave home and find somewhere warmer. She wants us
     to reach the sea and sail away to find a new home.\n\nTASKS:\n- Escape Fimbulvetr."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f15dcd330b0e4435bb9c970da8558ef7, type: 2}
+  m_sharedMaterial: {fileID: -8501872913779059096, guid: f15dcd330b0e4435bb9c970da8558ef7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7535,7 +7535,7 @@ MonoBehaviour:
   m_margin: {x: 0.23432921, y: 8.412743, z: 0.09425354, w: -0.30405423}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &753932442674552253
@@ -8545,7 +8545,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &753932442846290714
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8867,7 +8867,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &753932442920841278
 RectTransform:
   m_ObjectHideFlags: 0

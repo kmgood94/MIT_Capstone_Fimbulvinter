@@ -79,4 +79,8 @@ public class SkelEnemyAI : MonoBehaviour
                 collision.GetComponent<AttackAction>().Action();
         }
     }
+        public void StopMovement()
+    {
+        speed = 0;
+    }
 }
